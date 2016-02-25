@@ -1,0 +1,599 @@
+/*@font-face {
+    ????font-family: "SourceHanSansCN";
+    /!*????src: url("Chantelli_Antiqua-webfont.eot");*!/
+    ????src:url(//:) format("no404"), url("../font/SourceHanSansCN-Medium.woff") format('woff');
+    ????font-weight: normal;
+    ????font-style: normal;
+}*/
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    10% {
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.25;
+    }
+
+    35% {
+
+        opacity: 0.35;
+    }
+    50% {
+
+        opacity: 0.5; /*中间状态 透明度为0*/
+    }
+
+    65% {
+        opacity: 0.65;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    80% {
+        opacity: 0.80;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+
+body {
+    /*padding-top: 50px;*/
+    font-family: "Microsoft Yahei Light", Arial, sans-serif;
+
+    font-smoothing: antialiased !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    -ofont-smoothing: antialiased !important;
+}
+
+.carousel {
+    height: 500px;
+}
+
+.carousel .item {
+    height: 500px;
+    background-color: black;
+}
+
+.carousel .item img {
+    width: 100%;
+}
+
+#firstsight {
+    position: relative;
+
+    padding: 0;
+    height: 700px;
+
+    overflow: hidden;
+}
+
+#menu-nav {
+    margin: 0;
+}
+
+#photo {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../images/pic_3.jpg");
+    background-size: 100% auto;
+
+    transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
+
+    transition: all 10s;
+    -webkit-transition: all 10s;
+    -moz-transition: all 10s;
+    -o-transition: all 10s;
+}
+
+#banner {
+    position: absolute;
+    z-index: 11;
+    right: 8%;
+
+    width: 11em;
+    height: 200px;
+    opacity: 0.8;
+
+    background: #ffaa00;
+}
+
+#intro-caption {
+    margin-top: 50px;
+}
+
+#pics {
+    padding: 20px 0;
+}
+
+#intro-caption .intro-text {
+    width: 100%;
+    height: 16px;
+
+    font-size: 16px;
+    color: white;
+    line-height: 16px;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#intro-caption p#name {
+    margin-bottom: 40px;
+
+    height: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#intro-caption p#resume_btn {
+    letter-spacing: 0;
+}
+
+#intro-caption p#resume_btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+    height: 30px;
+    line-height: 30px;
+
+    animation-name: fadeIn; /*动画名称*/
+    animation-duration: 1.2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 0s; /*延迟时间*/
+
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 1.2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+
+    -moz-animation-name: fadeIn; /*动画名称*/
+    -moz-animation-duration: 1.2s; /*动画持续时间*/
+    -moz-animation-iteration-count: 1; /*动画次数*/
+    -moz-animation-delay: 0s; /*延迟时间*/
+
+    -o-animation-name: fadeIn; /*动画名称*/
+    -o-animation-duration: 1.2s; /*动画持续时间*/
+    -o-animation-iteration-count: 1; /*动画次数*/
+    -o-animation-delay: 0s; /*延迟时间*/
+}
+
+#about_me {
+    padding: 50px 0;
+    height: 350px;
+
+    text-align: center;
+}
+
+.row {
+    height: 100%;
+}
+
+.col-md-6 {
+    height: 100%;
+}
+
+#col-photo {
+    text-align: center;
+    line-height: 300px;
+}
+
+#head_photo {
+    border: 6px solid #ffaa00;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    display: inline-block;
+
+    line-height: 200px;
+    /*background-color: rgba(255,170,0,0.8);*/
+}
+
+#head_photo img {
+    width: 90%;
+    height: 90%;
+    /*border: 10px solid #ffaa00;*/
+
+    border-radius: 150px;
+}
+
+#about_me_text {
+    float: left;
+    width: 100%;
+}
+
+.section-title {
+    width: 100%;
+    height: 30px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+#about_me_tilte {
+    text-align: left;
+}
+
+.h-splite {
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 1px;
+
+    background-color: #ffaa00;
+}
+
+#col_h_splite {
+    width: 40%;
+
+    height: 2px;
+
+    margin-left: 0;
+}
+
+.me-info {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#skill {
+    padding-top: 50px;
+    height: 750px;
+
+    background-color: #eeeeee;
+}
+
+#skill-container {
+    height: 100%;
+
+    text-align: center;
+}
+
+/**********可翻转卡片*************/
+.rvs-container {
+    position: relative;
+    width: 100%;
+    height: 660px;
+
+    display: inline-block;
+
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+
+}
+
+.rvs-container .rvs_wrap {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+}
+
+.rvs_wrap .side {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+}
+
+.rvs-content .side-front {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+.rvs-content .side-back {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+
+.rvs-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+    transition: all 1s;
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 1s;
+
+    -moz-transform-style: preserve-3d;
+    -moz-transition: all 1s;
+
+    -o-transform-style: preserve-3d;
+    -o-transition: all 1s;
+}
+
+.rvs_front .rvs-content {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+.rvs_back .rvs-content {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+
+}
+
+/**************************************/
+
+#skill_row_group_1,
+#skill_row_group_2 {
+    width: 100%;
+    height: 50%;
+}
+
+.col-md-3 {
+    width: 25%;
+    height: 300px;
+}
+
+.col-cel {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}
+
+.skill-chart-cel {
+    width: 60%;
+    height: 50%;
+
+    display: inline-block;
+}
+
+.desc_title, .desc_text {
+    width: 80%;
+
+    text-align: center;
+    display: inline-block;
+}
+
+.desc_title {
+    height: 40px;
+
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.desc_text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#chart-2 {
+    width: 100%;
+    height: 100%;
+}
+
+#exp_tilte {
+    margin: 0 ! important;
+}
+
+#expearience {
+
+    height: 800px;
+    background-color: #fbfbfb;
+}
+
+#exp_timeline {
+    height: 660px;
+}
+
+#exp_tilte {
+    padding-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+#works {
+    padding-top: 50px;
+    height: 420px;
+
+    background-color: #eee;
+
+}
+
+#works #works_container {
+    height: 72%;
+}
+
+#works_row > .col-md-4 {
+    width: 33%;
+    height: 100%;
+}
+
+.workcard {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.work-pic {
+    width: 100%;
+    height: auto;
+}
+
+.work-title {
+    padding: 30px 0;
+
+    width: 100%;
+
+    font-family: "Microsoft YaHei";
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.workcard .side {
+    background-color: white;
+
+    border: 1px solid #ffc04a;
+}
+
+#works_subpics {
+
+    height: 0;
+    overflow: hidden;
+
+    box-shadow: 2px 0 5px 2px rgba(0, 0, 0, .4) inset;
+    -webkit-box-shadow: 2px 0 5px 2px rgba(0, 0, 0, .4) inset;
+    -moz-box-shadow: 2px 0 5px 2px rgba(0, 0, 0, .4) inset;
+    -o-box-shadow: 2px 0 5px 2px rgba(0, 0, 0, .4) inset;
+
+}
+
+#works_subpics_container {
+    height: 100%;
+
+    text-align: center;
+}
+
+#gallery {
+    width: 960px;
+    height: 100%;
+
+    display: inline-block;
+
+    transition: all 10s;
+    -webkit-transition: all 10s;
+    -moz-transition: all 10s;
+    -o-transition: all 10s;
+}
+
+#gallery > a {
+    float: left;
+
+    margin-top: 40px;
+    width: 240px;
+    height: 160px;
+
+}
+
+#gallery > a > img {
+    width: 80%;
+    height: 80%;
+
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .1);
+    -o-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .1);
+}
+
+#gallery > a > img:hover {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
+    -o-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
+}
+
+#works_subpics_tilte {
+
+    padding: 20px;
+    text-align: left;
+
+    font-size: 14px;
+}
+
+#works_subpics_splite {
+    margin: 0;
+    padding: 0;
+
+    background-color: #cfcfcf;
+}
+
+#gallery_close {
+    float: right;
+
+    height: 20px;
+
+    background: none;
+}
+
+#mycopyright {
+
+    height: 80px;
+
+    background-color: #202020;
+}
+
+#power {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 80px;
+
+    text-align: center;
+    line-height: 80px;
+
+    color: white;
+}
+
+#backTop{
+    position: fixed;
+    top: 76%;
+    right: 4%;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: rgba(0,0,0,.4);
+
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#backTop > li{
+    display: inline-block;
+}

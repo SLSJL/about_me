@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SUN’s 个人简历</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/verticaltimelinw_component.css"/>
+    <link rel="stylesheet" href="css/jquery.fs.boxer.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/defualt.css" rel="stylesheet"/>
+
+    <script src="js/data.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+</head>
+<body>
+
+<botton id="backTop">
+    <i class="icon-arrow-up icon-large"></i>
+</botton>
+
+<!--navbar-fixed-top-->
+<nav class="navbar navbar-default  " role="navigation" id="menu-nav">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand" style="width:100px;height: 50px;"><img src="images/LOGO.png" alt="logo"
+                                                                                    style="height: 100%"/></a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#about_me">简介</a></li>
+                <li><a href="#skill" id="skill_a">技能 </a></li>
+
+                <li><a href="#experience">经验</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">作品 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="active">
+                            <a href="#works" data-tab="tab-chrome">作品简介</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#gallery" class="gallery-shortcut" id="gallery-1" data-tab="tab-chrome">成都市楼宇经济信息服务平台</a></li>
+                        <li><a href="#gallery" class="gallery-shortcut" id="gallery-2" data-tab="tab-chrome">地税代征工会经费管理系统</a></li>
+                        <li><a href="#gallery" class="gallery-shortcut" id="gallery-3" data-tab="tab-chrome">遵义市违法建设综合应用信息平台</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid" id="firstsight">
+    <div class="container-fluid" id="photo">
+
+    </div>
+
+    <div id="banner">
+        <div id="intro-caption">
+            <p id="name" class="intro-text">
+                <img src="images/name.png" alt="name" style="height: 100%"/>
+            </p>
+
+            <p id="job" class="intro-text">前端工程师</p>
+
+            <p id="resume_btn" class="intro-text">简 历</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="about_me">
+    <div class="row">
+        <div class="col-md-6" id="col-photo">
+            <div id="head_photo">
+                <img src="images/headphoto.jpg" alt="头像"/>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div id="about_me_text">
+                <p id="about_me_tilte" class="section-title">
+                    关于我
+                </p>
+                <hr class="h-splite" id="col_h_splite"/>
+
+                <p class="me-info">Name: 孙佳林</p>
+
+                <p class="me-info">Skill: Web前端工程师</p>
+
+                <p class="me-info">Tel: 182 0039 1412</p>
+
+                <p class="me-info">Mail: 350916525@qq.com</p>
+
+                <p class="me-info">Major: 地理信息系统</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="skill">
+    <div class="container" id="skill_container">
+        <p class="section-title" id="skill_tilte">我的技能</p>
+        <hr class="h-splite" id="skill_splite"/>
+
+        <div class="rvs-container"  >
+            <!--photo-wrap 负责平移-->
+            <div class="rvs_wrap rvs_front">
+
+                <!--photo-wrap 负责翻转-->
+                <div class="rvs-content ">
+                    <!--前面-->
+                    <div class="side side-front">
+                        <!--前面内容-->
+
+                        <div class="row" id="skill_row_group_1">
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="HTML"></div>
+
+                                    <p class="desc_title">
+                                        HTML
+                                    </p>
+
+                                    <p class="desc_text">
+                                        能够熟练应用HTML编写网页，并
+                                        <strong style="font-weight: bolder"> HTML5 </strong> 的
+                                        新特性有所了解
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="CSS"></div>
+
+                                    <p class="desc_title">CSS</p>
+
+                                    <p class="desc_text">熟悉css知识，熟练使用div+css排版出不丑的网页以及一些简单的动画</div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="Javascript"></div>
+
+                                    <p class="desc_title">Javascript</p>
+
+                                    <p class="desc_text">能熟练的手写代码实现一些页面效果，能熟练使用ajax，json等技术</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="jQuery"></div>
+
+                                    <p class="desc_title">jQuery</p>
+
+                                    <p class="desc_text">能很熟练的使用jQuery，并已在3个实际项目中使用jQuery完成工作任务</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="skill_row_group_2">
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="Bootstrap"></div>
+
+                                    <p class="desc_title">Bootstrap</p>
+
+                                    <p class="desc_text">了解bootstrap，并能实际工作中熟练使用</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="PSAI"></div>
+
+                                    <p class="desc_title">PS / AI</p>
+
+                                    <p class="desc_text">擅长利用Photoshop绘制UI原型，并制作相应的切图，具备一定的设计能力</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="Csharp"></div>
+
+                                    <p class="desc_title">C#.net</p>
+
+                                    <p class="desc_text">对 .net 平台 有一定的了解。在毕业设计中使用C#编写过后台程序</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="col-cel">
+                                    <div class="skill-chart-cel" id="NodeJs"></div>
+
+                                    <p class="desc_title">NodeJs</p>
+
+                                    <p class="desc_text">对新的后台技术很感兴趣不断学习中</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--背面-->
+                    <div class="side side-back">
+                        <div id="chart-2">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="experience">
+    <div class="container" id="exp_container">
+        <p id="exp_tilte" class="section-title">我的经历</p>
+        <hr class="h-splite" id="exp_splite"/>
+
+        <div id="exp_timeline">
+            <ul class="cbp_tmtimeline">
+                <li>
+                    <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>2015/06</span> <span>至今</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>成都汉默地理资讯科技有限责任公司</h2>
+
+                        <p>任职前端工程师，根据公司的系统设计，完成公司项目的前端开发。
+                            从UI 设计到实现，并利用公司Web引擎与数据库交互，实现并完善
+                            系统功能。</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>2015/3</span> <span>2015/06</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>中科宇图科技股份有限公司</h2>
+
+                        <p>任项目实施经理助理，负责公司软件项目开发计划的编写，协调资
+                            源，推进项目实施，以及部分系统分析工作。协调研发工程中遇到
+                            的关键技术问题。</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>2014/10</span> <span>2015/3</span></time>
+                    <div class="cbp_tmicon "></div>
+                    <div class="cbp_tmlabel">
+                        <h2>成都我有科技有限责任公司</h2>
+
+                        <p>负责公司产品 UI 设计，切图并配合软件工程师完成公司产品研制；
+                            负责公司官网设计，HTML实现，配合前端工程师，完成官网制作，
+                            以及上线后维护。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-fluid" id="works">
+
+    <div class="container" id="works_container">
+        <p class="section-title" id="works_tilte">我的作品</p>
+        <hr class="h-splite" id="works_splite"/>
+
+        <div class="row" id="works_row">
+            <div class="col-md-4" title="点击查看更多">
+
+                <div class="rvs-container workcard" id="workcard_1">
+                    <!--photo-wrap 负责平移-->
+                    <div class="rvs_wrap rvs_front">
+                        <!--photo-wrap 负责翻转-->
+                        <div class="rvs-content ">
+                            <!--前面-->
+                            <div class="side side-front">
+                                <!--前面内容-->
+                                <img class="work-pic" src="images/work-1-1.jpg" alt=""/>
+
+                                <p class="work-title"> 成都市楼宇经济信息服务平台 </p>
+                            </div>
+
+                            <!--背面-->
+                            <div class="side side-back">
+                                2015年11月 - 至今
+                                <br/>
+                                <br/>
+                                &nbsp&nbsp&nbsp负责各个功能模块的，数据展示功能，数据维护功能，统计分析功能，地图模块数据展示，区域统计分析，图形绘制等
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4" title="点击查看更多">
+                <div class="rvs-container workcard" id="workcard_2">
+                    <!--photo-wrap 负责平移-->
+                    <div class="rvs_wrap rvs_front">
+
+                        <!--photo-wrap 负责翻转-->
+                        <div class="rvs-content ">
+                            <!--前面-->
+                            <div class="side side-front">
+                                <!--前面内容-->
+                                <img class="work-pic" src="images/work-2-1.jpg" alt=""/>
+
+                                <p class="work-title"> 地税代征工会经费管理系统 </p>
+                            </div>
+
+                            <!--背面-->
+                            <div class="side side-back">
+                                2015年10月 - 2015年11月
+                                <br/>
+                                <br/>
+                                &nbsp&nbsp&nbsp负责各个功能模块的，数据展示功能，数据维护功能，统计分析功能
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4" title="点击查看更多">
+                <div class="rvs-container workcard" id="workcard_3">
+                    <!--photo-wrap 负责平移-->
+                    <div class="rvs_wrap rvs_front">
+
+                        <!--photo-wrap 负责翻转-->
+                        <div class="rvs-content ">
+                            <!--前面-->
+                            <div class="side side-front">
+                                <!--前面内容-->
+                                <img class="work-pic" src="images/work-3-1.jpg" alt=""/>
+
+                                <p class="work-title"> 遵义市违法建设综合应用信息平台 </p>
+                            </div>
+
+                            <!--背面-->
+                            <div class="side side-back">
+                                2015年10月 - 2016年1月
+                                <br/>
+                                <br/>
+                                &nbsp&nbsp&nbsp负责各个功能模块的设计，数据展示功能，数据维护功能，统计分析功能，以及GIS平台功能的建设
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="works_subpics">
+    <div class="container" id="works_subpics_container">
+
+        <div id="gallery" style="text-align: center;">
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="copyright" id="mycopyright">
+    <p id="power">Powered by SUN &copy 2016</p>
+</div>
+
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="script/verticaltimeline_modernizr.custom.js"></script>
+
+<script src="js/jquery.fs.boxer.js"></script>
+
+<script src="script/echarts-2.2.7/build/dist/echarts.js"></script>
+<script src="js/defualt.js"></script>
+</body>
+</html>
